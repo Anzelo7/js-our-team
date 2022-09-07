@@ -24,12 +24,12 @@ const soci = [
     {
         nome: 'Scott Estrada',
         ruolo: 'Developer',
-        foto: 'wayne-barnett-founder-ceo.jpg',
+        foto: 'scott-estrada-developer.jpg',
     },
     {
         nome: 'Barbara Ramos',
         ruolo: 'Graphic Designer',
-        foto: 'wayne-barnett-founder-ceo.jpg',
+        foto: 'barbara-ramos-graphic-designer.jpg',
     }
 ]
 
@@ -40,9 +40,9 @@ for (let i = 0; i < soci.length; i++) {
     console.log(`nome ${socio.nome} - ruolo ${socio.ruolo} - foto ${socio.foto}`);
 
     sociContainer.innerHTML += `<div>
+                                      <div><img src="img/${socio.foto}" alt="Foto"></div>
                                       <div>Nome: ${socio.nome}</div>
-                                      <div>Ruolo: ${socio.ruolo}</div>
-                                      <div>Foto: src="img/${socio.foto}" alt=""</div>
+                                      <div>Ruolo: ${socio.ruolo}</div>                                      
                                 </div>`
 }
 
